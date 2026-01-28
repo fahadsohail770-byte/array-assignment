@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Array Operations</title>
+  </head>
+  <body>
+    <h1>Student Array Operations</h1>
+    <script>
+    
+      let students = ["Ali", "Ahmed", "Sara", "Fatima", "Omar"];
+      console.log("Initial array:", students);
+
+  
+      console.log("3rd student:", students[2]);
+
+
+      students.push("Zara");
+      console.log("After adding Zara at end:", students);
+
+      let removedLast = students.pop();
+      console.log("Removed last student:", removedLast);
+      console.log("Array after removing last:", students);
+
+t.
+      students.unshift("Hassan");
+      console.log("After adding Hassan at beginning:", students);
+
+      let removedFirst = students.shift();
+      console.log("Removed first student:", removedFirst);
+      console.log("Array after removing first:", students);
+
+
+      
+      console.log("Total number of students:", students.length);
+
+      let indexAhmed = students.indexOf("Ahmed");
+      console.log("Index of Ahmed:", indexAhmed);
+
+      let existsSara = students.includes("Sara");
+      console.log("Does Sara exist?", existsSara);
+
+      let firstTwo = students.slice(0, 2);
+      console.log("First 2 students:", firstTwo);
+
+ 
+      students.splice(1, 1);
+      console.log("Array after removing 2nd student:", students);
+      let joined = students.join(" - ");
+      console.log("Joined string:", joined);
+
+  
+      students.reverse();
+      console.log("Reversed array:", students);
+
+    
+      students.sort();
+      console.log("Sorted array:", students);
+
+    
+      let products = ["Laptop", "Phone", "Tablet", "Headphones", "Mouse"];
+
+t
+      products.push("Keyboard");
+      console.log("Products after adding Keyboard:", products);
+
+      products.pop();
+      console.log("Products after removing last:", products);
+
+      products.sort();
+      console.log("Sorted products:", products);
+
+  
+      console.log("Final products array:", products);
+    </script>
+  </body>
+</html>
